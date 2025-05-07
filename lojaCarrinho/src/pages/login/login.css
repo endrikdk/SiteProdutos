@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background: linear-gradient(to right, #000000, #484b50);
+  }
+  
+  .login-container {
+    max-width: 400px;
+    max-height: 1000px;
+    margin-left: 800px;  
+    padding: 50px;
+    border: 2px solid #d4d4d4;
+    border-radius: 10px;
+    background-color: #f9f9f9;  
+    text-align: center;
+    font-family: Arial;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+
+  label {
+    font-size: 1.0rem;
+    color: #333;
+    font-family: 'Segoe UI';
+  }
+
+  input {
+    color: #ffffff;
+    height: 2rem;
+    background-color: #494949;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid;
+    border-radius: 1rem;
+    border-color: #494949;
+    width: 100%;
+    margin-right: 10rem;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 11px;
+  }
+  
+  .botao-login {
+    margin-top: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ff5722;
+    color: white;
+    transition: background-color 0.3s ease;
+    padding: 20px;
+    font-family: 'Segoe UI';
+  }
+  
+  button:hover {
+    background-color: #000000;
+  }
+  
