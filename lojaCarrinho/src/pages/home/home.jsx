@@ -8,13 +8,12 @@ export default function home() {
   const irParaLogin = () => {
     navigate("/login");
     };
-    const irParaProdutos = () => {
-        navigate("/produtos");
-        };
-
-        const irParaCadastro = () => {
-          navigate("/criarLogin");
-          };
+  const irParaProdutos = () => {
+    navigate("/produtos");
+    };
+  const irParaCadastro = () => {
+    navigate("/criarLogin");
+    };
 
   return (
     <div className="home-container">
