@@ -57,13 +57,8 @@ export default function Produtos() {
   };
 
   return (
-
     <div className="produtos-container">
-
-    <div style={{ marginTop: "2rem", textAlign: "center" }}>
-      <button onClick={() => navigate("/")}>Tela inicial</button>
-
-    <div className="produtos-container">
+      
       <div className="produtos-grid">
         {produtos.map((produto, index) => (
           <div className="produto-card" key={index}>
@@ -138,8 +133,6 @@ export default function Produtos() {
           <span className="carrinho-contador">{totalItens}</span>
         </div>
       )}
-         </div>
-      </div>
     </div>
   );
 }

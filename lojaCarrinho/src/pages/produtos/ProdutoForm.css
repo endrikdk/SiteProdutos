@@ -1,0 +1,22 @@
+.produto-form-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 32px;
+  background-color: #f5f0ff;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(134, 92, 214, 0.2);
+  text-align: center;
+  color: #4b0082;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+.produto-form-container h2 {
+  font-size: 26px;
+  margin-bottom: 16px;
+  color: #6a0dad;
+}
+
+.produto-form-container p {
+  font-size: 16px;
+  color: #5e5e5e;
+}
