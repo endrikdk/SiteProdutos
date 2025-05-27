@@ -1,23 +1,21 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../contexts/AuthContext"; // <-- importe aqui
+import { useAuth } from "../../contexts/AuthContext"; 
 import "./Login.css";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const navigate = useNavigate();
-  const { login } = useAuth(); // <-- use o contexto de autenticação
-
+  const { login } = useAuth(); 
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Simulando login com usuário fictício
     const fakeUser = { email };
-    login(fakeUser); // <-- seta o usuário como autenticado
+    login(fakeUser); 
 
     alert("Logado com sucesso!");
-    navigate("/produtos"); // <-- agora pode acessar a rota privada
+    navigate("/produtos"); 
   };
 
   return (

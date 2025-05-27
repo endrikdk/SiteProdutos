@@ -1,48 +1,52 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #000000, #484b50);
-  }
-  
-  .home-container {
-    max-width: 400px;
-    max-height: 1000px;
-    margin-left: 700px; 
-    padding: 30px;
-    border: 2px solid #d4d4d4;
-    border-radius: 10px;
-    background-color: #f9f9f9;  
-    text-align: center;
-    font-family: Arial;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 2rem;
-    font-family: 'Segoe UI';
-  }
-  
-  .button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 11px;
-  }
-  
-  .botao-home {
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    background-color: #ff5722;
-    color: white;
-    transition: background-color 0.3s ease;
-    padding: 20px;
-    font-family: 'Segoe UI';
-  }
-  
-  button:hover {
-    background-color: #000000;
-  }
-  
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #1e1e1e, #3c3f44);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container {
+  max-width: 420px;
+  width: 100%;
+  padding: 40px;
+  background-color: #ffffff10;
+  border: 1px solid #ffffff30;
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #f1f1f1;
+  margin-bottom: 1.5rem;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.botao-home {
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(to right, #ff5722, #ff784e);
+  color: white;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  padding: 14px 24px;
+  min-width: 120px;
+  font-weight: 600;
+}
+
+.botao-home:hover {
+  background: linear-gradient(to right, #000000, #333333);
+  transform: scale(1.05);
+}
