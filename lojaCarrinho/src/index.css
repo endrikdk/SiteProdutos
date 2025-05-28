@@ -35,13 +35,13 @@ h1 {
 
 a {
   font-weight: 500;
-  color: #ff784e;
+  color: #6a0dad;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #ffa88b;
+  color: #6a0dad;
 }
 
 button {
@@ -64,7 +64,7 @@ button:hover {
 
 button:focus,
 button:focus-visible {
-  outline: 3px solid #ff784e;
+  outline: 3px solid #6a0dad;
   outline-offset: 2px;
 }
 
@@ -75,7 +75,7 @@ button:focus-visible {
   }
 
   a:hover {
-    color: #ff784e;
+    color: #6a0dad;
   }
 
   button {

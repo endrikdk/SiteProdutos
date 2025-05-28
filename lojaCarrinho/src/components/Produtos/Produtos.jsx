@@ -1,13 +1,19 @@
-import React, { useState } from "react";
-import { produtos } from "../../data/produtos";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Produtos.css";
 
 export default function Produtos() {
-  const navigate = useNavigate();
+  const [produtos, setProdutos] = useState([]);
   const [carrinho, setCarrinho] = useState([]);
   const [totalItens, setTotalItens] = useState(0);
   const [carrinhoAberto, setCarrinhoAberto] = useState(false);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/produtos/ler")
+      .then((res) => res.json())
+      .then((data) => setProdutos(data))
+      .catch((err) => console.error("Erro ao buscar produtos:", err));
+  }, []);
 
   const adicionarAoCarrinho = (produto) => {
     const itemExistente = carrinho.find(item => item.produto.nome === produto.nome);
